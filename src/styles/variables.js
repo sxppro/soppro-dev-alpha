@@ -17,9 +17,9 @@ const variables = css`
     --pink: #f57dff;
     --blue: #57cbff;
 
-    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-      sans-serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Calibre', 'Inter', 'San Francisco',
+      'SF Pro Text', system-ui, sans-serif;
+    --font-mono: 'Hubot Sans', 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
     --fz-xxs: 12px;
     --fz-xs: 13px;
@@ -39,6 +39,7 @@ const variables = css`
 
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition-alt: all 0.4s ease;
 
     --hamburger-width: 30px;
 

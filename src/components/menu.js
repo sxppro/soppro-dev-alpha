@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
 import { navLinks } from '@config';
-import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
+import { KEY_CODES } from '@utils';
+import { Link } from 'gatsby';
+import { useEffect, useRef, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
 
 const StyledMenu = styled.div`
   display: none;
@@ -246,7 +246,8 @@ const Menu = () => {
           onClick={toggleMenu}
           menuOpen={menuOpen}
           ref={buttonRef}
-          aria-label="Menu">
+          aria-label="Menu"
+        >
           <div className="ham-box">
             <div className="ham-box-inner" />
           </div>
