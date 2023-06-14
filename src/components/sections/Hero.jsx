@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
+import { usePrefersReducedMotion } from '@hooks';
+import { loaderDelay, navDelay } from '@utils';
+import { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -75,8 +75,12 @@ const Hero = () => {
     </>
   );
   const heroButton = (
-    <a className="email-link" href="https://soppro.dev" target="_blank" rel="noreferrer">
-      Check out my other website!
+    <a
+      className="email-link"
+      href="https://soppro-dev-git-feature-home-restyle-sxppro.vercel.app/"
+      target="_blank"
+      rel="noreferrer">
+      Check out my website in progress!
     </a>
   );
 
